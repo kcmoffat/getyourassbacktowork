@@ -1,0 +1,40 @@
+<!--
+  Copyright (c) 2012 The Chromium Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+
+  Brian Kennish <bkennish@chromium.org>
+
+  An option page for configuring notifications.
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>Get Your Ass Back to Work! Options</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="options.js"></script>
+  </head>
+  <body>
+    <h1>
+      <img src="64.png" alt="Drill Sergeant">
+      Get Your Ass Back to Work! Options
+    </h1>
+    <h2>Options</h2>
+    <form id="options">
+      <p><input type="checkbox" name="isActivated" checked>Active
+      </p>
+      Get my ass back to work after 
+      <select name="frequency">
+        <option>15</option>
+        <option>30</option>
+        <option>60</option>
+        <option>90</option>
+        <option>120</option>
+      </select>
+      seconds of screwin around on the blocked sites below.
+      <p>Blocked Sites - these tabs will be ruthlessly closed if you spend too long on them.</p>
+      <div id="blockedSites">
+    </div>
+    </form>
+  </body>
+</html>
